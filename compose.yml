@@ -1,0 +1,10 @@
+services:
+  python:
+    build: ./
+    volumes:
+      - type: bind
+        source: ./main.py
+        target: /main.py
+      - type: bind
+        source: ./images
+        target: /images
